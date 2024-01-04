@@ -3,7 +3,11 @@
     <v-container>
       <v-row>
         <v-col v-for="(item, idx) in images" :key="idx" cols="12">
-          <img :src="require(`@/assets/by_car_insurance/${item.name}.png`)" alt="Local Image" />
+          <img
+            :src="require(`@/assets/by_car_insurance/${item.name}.png`)"
+            alt="Main user Image"
+            :height="width"
+          />
         </v-col>
       </v-row>
     </v-container>
@@ -12,6 +16,22 @@
 
 <script>
 export default {
+  computed: {
+    width() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs':
+          return 350
+        case 'sm':
+          return 400
+        case 'md':
+          return 500
+        case 'lg':
+          return 600
+        case 'xl':
+          return 800
+      }
+    },
+  },
   data() {
     return {
       images: [
@@ -43,7 +63,7 @@ export default {
         { name: '25' },
         // Add more items as needed
       ],
-    };
+    }
   },
-};
+}
 </script>
