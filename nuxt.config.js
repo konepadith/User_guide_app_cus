@@ -1,13 +1,11 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global page headers
   head: {
     titleTemplate: '%s - user_guide_sic_app',
     title: 'user_guide_sic_app',
-    htmlAttrs: {
-      lang: 'en',
-    },
+    htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,41 +14,38 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+
+  // Router base for GitHub Pages
   router: {
-    base: '/User_guide_app_cus/', // fixes page links
+    base: '/User_guide_app_cus/', // must match your repo name
   },
+
+  // Build configuration
   build: {
     publicPath: '/User_guide_app_cus/_nuxt/', // fixes _nuxt assets
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  // Global CSS
   css: [],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // Plugins
   plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Auto import components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
-  ],
+  // Modules for dev and build
+  buildModules: ['@nuxtjs/vuetify'],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-  ],
+  // Modules
+  modules: ['@nuxtjs/axios'],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  // Axios configuration
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
 
-  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
+  // Vuetify config
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
@@ -68,7 +63,4 @@ export default {
       },
     },
   },
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
 }
