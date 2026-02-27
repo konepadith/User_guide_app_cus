@@ -17,7 +17,10 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   router: {
-    base: '/User_guide_app_cus/'  // must match your repo name
+    base: '/User_guide_app_cus/', // fixes page links
+  },
+  build: {
+    publicPath: '/User_guide_app_cus/_nuxt/', // fixes _nuxt assets
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
