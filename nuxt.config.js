@@ -16,9 +16,9 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  router: {
-    base: 'https://konepadith.github.io/User_guide_app_cus/' // replace with your repo name
-  },
+  // router: {
+  //   base: 'https://konepadith.github.io/User_guide_app_cus/' // replace with your repo name
+  // },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
