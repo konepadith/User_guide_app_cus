@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{446:function(t,n,e){"use strict";e.r(n);var l=e(351),c={name:"IndexPage"},o=e(78),component=Object(o.a)(c,(function(){var t=this._self._c;return t(l.a,[t("div",{staticStyle:{width:"50%",float:"left"}},[t("p",[this._v("MSIG SOKXAY INSURANCE 3")])])])}),[],!1,null,null,null);n.default=component.exports}}]);
