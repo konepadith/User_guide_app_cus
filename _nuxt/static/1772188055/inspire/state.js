@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002FUser_guide_app_cus\u002F_nuxt\u002Fstatic\u002F1772188055",layout:"default",error:a,serverRendered:true,routePath:"\u002Finspire",config:{_app:{basePath:"\u002FUser_guide_app_cus\u002F",assetsPath:"\u002FUser_guide_app_cus\u002F_nuxt\u002F",cdnURL:a}}}}(null));
